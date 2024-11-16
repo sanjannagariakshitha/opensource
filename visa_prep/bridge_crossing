@@ -1,1 +1,7 @@
-
+mango_wt, truck_wt, bridge_capacity = map(int, input().split())
+avail_capacity = bridge_capacity - truck_wt
+if avail_capacity <=0:
+    print(0)
+else:
+    max_mango = avail_capacity // mango_wt
+    print(max_mango)
